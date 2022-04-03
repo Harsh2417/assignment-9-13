@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+body{
+    background: white;
+    background-image: url("mountain.jpg");
+    background-position: center;
+}
+.show-btn
+{
+    position: absolute;
+    left: 75%;
+    top: 83%;
+    width: 90px;
+    height: 90px;
+cursor: pointer;
+border-radius: 50%;
+text-align: center;
+background: tomato;
+color:aliceblue;
+}
+.show-btn i{
+    margin: 15px 17px;
+    font-size: 60px;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+#show:checked~ .wrapper{
+    display: block;
+}
+.wrapper{
+    width: 320px;
+    height: 400px;
+    margin: 80px auto;
+    background:rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px black;
+}
+h5{
+    color:#fff;
+    padding: 15px;
+    background-color: orangered;
+}
+p{
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    text-align: center;
+}
+form{
+    margin: 15px;
+    width: 250px;
+    padding: 25px 10px;
+    border: 1px solid white;
+}
+input
+{
+    display:block;
+    width: 92%;
+    padding: 10px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+input::placeholder{
+    color: rgb(224, 220, 220);
+}
+button{
+    width:100%;
+    padding: 8px;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: tomato;
+    border-radius: 12px;
+}
+input:focus
+{
+    border-color: red;
+}
+button:hover
+{
+    background: red;
+}
+.wrapper{
+    animation: popup 1%;
+}
+@keyframes popup
+{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.2);
+    }
+    60%{
+        transform:scale(1.31);
+    }
+    70%{
+        transform:scale(1.5);
+    }
+    80%{
+        transform:scale(1.0);
+    }
+    90%{
+        transform:scale(1.10);
+    }
+}
